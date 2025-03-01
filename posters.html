@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Posters</title>
+
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #ff4757;
+        }
+
+        .poster-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .poster {
+            background: #fff;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .poster img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .poster button {
+            background: #1e90ff;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+        .poster button:hover {
+            background: #007bff;
+        }
+
+        .back-home {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            background: #ff4757;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .back-home:hover {
+            background: #e84118;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Posters</h1>
+        <div class="poster-grid">
+            <!-- Poster 1 -->
+            <div class="poster">
+                <img src="https://via.placeholder.com/200x300?text=Poster+1" alt="Movie Poster 1">
+                <h3>Movie 1</h3>
+                <button onclick="buyPoster('Movie 1')">Buy Now</button>
+            </div>
+
+            <!-- Poster 2 -->
+            <div class="poster">
+                <img src="https://via.placeholder.com/200x300?text=Poster+2" alt="Movie Poster 2">
+                <h3>Movie 2</h3>
+                <button onclick="buyPoster('Movie 2')">Buy Now</button>
+            </div>
+
+            <!-- Poster 3 -->
+            <div class="poster">
+                <img src="https://via.placeholder.com/200x300?text=Poster+3" alt="Movie Poster 3">
+                <h3>Movie 3</h3>
+                <button onclick="buyPoster('Movie 3')">Buy Now</button>
+            </div>
+
+            <!-- Poster 4 -->
+            <div class="poster">
+                <img src="https://via.placeholder.com/200x300?text=Poster+4" alt="Movie Poster 4">
+                <h3>Movie 4</h3>
+                <button onclick="buyPoster('Movie 4')">Buy Now</button>
+            </div>
+        </div>
+
+        <a href="index.html" class="back-home">Back to Home</a>
+    </div>
+
+    <script>
+        function buyPoster(movieName) {
+            alert("You selected: " + movieName);
+        }
+    </script>
+</body>
+</html>
